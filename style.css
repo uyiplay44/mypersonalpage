@@ -1,0 +1,488 @@
+:root {
+    --main-bg-color: #06283D;
+    --main-bg-2-color: #030713;
+    --main-text-color:#FAF7F0;
+    --main-btn-primary-color: #5F9DF7;
+    --main-btn-secondary-color: #06283D;
+    --main-font-size:2rem;
+    --main-font-2-size:3rem;
+    --main-padding: 2rem;
+    --box--main-color: #1e3a8a;
+    --main-width-size: 100%;
+    --width-size: 50%;
+    --main-height-size: 100%;
+    --height-size: 50%;
+    --general-gap-space: 5.24rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: var(--main-bg-color);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+.hamburger {
+    cursor: pointer;
+    display: block;
+    font-size: var(--main-font-size);
+    color: var(--main-text-color);
+}
+.profile_menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background: var(--main-bg-color);
+}
+.title_logo{
+    font-size: var(--main-font-size);
+    color: var(--main-text-color);
+}
+.nav_links{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap:var(--general-gap-space);
+    color: var(--main-text-color);
+}
+.section_card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.info_title h3{
+    font-size: var(--main-font-size);
+    width: var(--main-width-size);
+    color: var(--main-text-color);
+}
+.info_title{
+    width: 50%;
+    height: auto;
+    padding: 20px 5px;
+}
+.info_title p{
+    width: 100%;
+    height: auto;
+    color:  var(--main-text-color);
+    font-size: var(--main-font-size);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    max-width: 100%;
+    height: 100%;
+
+}
+.about_page img{
+    object-fit: cover;
+    width: 40%;
+    height: 60%;
+    border-radius: 50%;
+    position: relative;
+    top: 58px;
+    right: -450px;
+    padding: 20px;
+}
+.bg_title .cards{
+    width: 20%;
+    height: 40vh;
+    background: #000a18;
+    border-radius: 10%;
+    margin: 40px;
+    position: absolute;
+    right: 0;
+}
+.icon_menu{
+    margin: 10px;
+}
+.icon_menu a{
+    font-size: var(--main-font-size);
+    color: #5F9DF7;
+    padding: 30px 5px;
+    cursor: pointer;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    background: #5F9DF7;
+    border:transparent;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: #FAF7F0;
+}
+.btn:hover{
+    background: lightpink;
+    transition: 0.5s ease-in-out;
+}
+.about_menu{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 100px;
+}
+.about_tag h2{
+    font-size: var(--main-font-size);
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    border-bottom: 2px solid var(--main-text-color);
+    margin: 10px;
+}
+.about_info p{
+    margin: 5px 0 0 5px;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+}
+.skills{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+}
+.skill_card{
+    border: 1px solid black;
+    margin: 20px 10px;
+    border-radius: 5px;
+    background: var(--main-btn-primary-color);
+    cursor: pointer;
+}
+.skill_card:hover{
+    background: lightpink;
+    transition: 0.5s ease-in-out;
+}
+.tag_icon{
+    font-size:var(--main-font-2-size);
+    color: var(align-items);
+    text-align: center;
+}
+.skill_card h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: var(--main-font-size);
+}
+.skill_menu h1{
+    font-size: var(--main-font-size);
+    color: var(--main-text-color);
+    border-bottom: 1px solid var(--main-text-color);
+    width: 90%;
+    margin: 10px;
+}
+.project{
+    width: 100%;
+    height: 100%;
+}
+.project_menu img{
+    width: 100%;
+    height: auto;
+    padding: 50px 15px;
+}
+.project_menu{
+    margin: 10px 5px;
+    box-shadow: 2px 1px 3px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.project_menu:hover{
+    transition: 0.5s ease-in;
+    background:var(--box--main-color);
+}
+.project h2{
+    font-size: var(--main-font-size);
+    border-bottom: 2px solid #ffff;
+    width: 90%;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+}
+.project_menu p{
+    width: 100%;
+    padding: 50px 10px;
+}
+.project_menu a{
+    margin: 30px;
+}
+.grid-col-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+.bx-right-arrow-alt{
+    color: white;
+    font-size: 1.45rem;
+}
+.project_menu a{
+    width: 50px;
+    height: 50px;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 50%;
+    margin: 20px;
+}
+.form__name{
+    display: flex;
+    gap: 1.3rem;
+}
+.contact__form input[type="text"]{
+    width: 50%;
+}
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--main-btn-primary-color);
+}
+.contact__form .btn-primary{
+    width: 50%;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: var(--main-btn-primary-color);
+    border-width: 0.102rem;
+}
+.footer p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .section_card{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px 5px;
+    }
+    .nav_links{
+        display: none;
+    }
+    .info_title h3{
+        width: 100%;
+        height: 100%;
+        color: var(--main-text-color);
+        font-size: var(--main-font-size);
+    }
+    .info_title p{
+        width: 100%;
+        height: 100px;
+        color: var(--main-text-color);
+        font-size: var(--main-font-size);
+    }
+    .info_title{
+        text-align: center;
+        margin: 20px 5px;
+        width: 100%;
+    }
+    .btn{
+        width: 150px;
+        height: 50px;
+        background: #5F9DF7;
+        border:transparent;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        color: #FAF7F0;
+    }
+    .btn:hover{
+        background: var(--main-bg-color);
+        transition: 1s ease-in;
+        border: 1px solid #FAF7F0;
+    }
+    .icon_menu i{
+        height: 100px;
+        margin: 20px;
+        font-size:3rem;
+        color: var(--main-text-color);
+        cursor: pointer;
+    }
+    .icon_menu i:hover{
+       color: #5F9DF7;
+    }
+    .container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .bg_title .cards{
+        width: 50%;
+        height: 50vh;
+        background: #030713;
+        border-radius: 10%;
+        margin: 10px;
+        position: absolute;
+    }
+    .about_page img{
+        width: 70%;
+        height: 60vh;
+        object-fit: cover;
+        margin: 10px;
+        border-radius: 20%;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    .about_menu{
+        width: 100%;
+        height: 100%;
+    }
+    .about_tag h2{
+        font-size: var(--main-font-size);
+        border-bottom:2px solid #FAF7F0;
+        margin: 10px 0px 0px;
+        color: var(--main-text-color);
+        text-transform: uppercase;
+    }
+    .about_info p{
+        color: var(--main-text-color);
+        letter-spacing: 2px;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .skill_menu h1{
+        font-size: var(--main-font-2-size);
+        border-bottom: 1px solid var(--main-text-color);
+        margin: 20px 5px 10px;
+        color:  var(--main-text-color);
+    }
+    .skills .skill_card{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--main-bg-2-color);
+        cursor: pointer;
+        margin: 20px 10px;
+        width: 75%;
+        height: 80px;
+        background: var(--main-btn-primary-color);
+        border-radius: 10px;
+    }
+    .skills .skill_card h4{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .skills .skill_card .tag_icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+        font-size: var(--main-font-size);
+        color-interpolation-filters:linearRGB;
+    }
+    .project{
+        width: 100%;
+        height: 100%;
+        padding:30px;
+    }
+    .project h2{
+        font-size: var(--main-font-2-size);
+        border-bottom: 1px solid var(--main-text-color);
+        text-transform: uppercase;
+        color: var(--main-text-color);
+    }
+    .grid-col-menu{
+        display: block;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .project_menu img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        padding: 20px 8px;
+    }
+    .project_menu p{
+        width: 100%;
+        height: 100%;
+       padding: 30px 10px;
+       color: var(--main-text-color);
+       letter-spacing: 2px;
+       font-weight: 500;
+    }
+    .project_menu a{
+        width: 100px;
+        text-decoration: none;
+        font-weight: 400;
+        text-align: center;
+        padding: 30px 10px;
+    }
+    .project_menu:hover{
+        transition: 0.5s ease-in;
+        background:var(--box--main-color);
+    }
+    .bx-right-arrow-alt{
+        color: white;
+        font-size: 1.0rem;
+    }
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 95%;
+        margin: 10px;
+    }
+    .form__name{
+        display: flex;
+        gap: 1.2rem;
+    }
+    .contact__form input[type="text"]{
+        width: 100%;
+        height: 100%;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 1rem;
+        background: var(--main-btn-primary-color);
+    }
+    .contact__form .btn-primary{
+        width: 100%;
+        height: 50px;
+        text-transform: uppercase;
+        cursor: pointer;
+        background: var(--main-btn-primary-color);
+        border-width: 0.102rem;
+        color: var(--main-text-color);
+    }
+    .contact__form .btn-primary:hover{
+        background: var(--main-bg-color);
+        transition: 0.8s ease-in-out;
+    }
+    .form h1{
+        font-size: var(--main-font-2-size);
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--main-text-color);
+        padding-top: 40px;
+    }
+}
